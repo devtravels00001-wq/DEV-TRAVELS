@@ -1,51 +1,27 @@
-function sendWhatsApp(service) {
+document.addEventListener("DOMContentLoaded", function () {
 
-  const phoneNumber = "919813130135";
+  const links = document.querySelectorAll("nav a");
 
-  const message =
-    "Hello Dev Travels, I am interested in " +
-    service +
-    ".";
+  links.forEach(function (link) {
 
-  const whatsappLink =
-    "https://wa.me/" +
-    phoneNumber +
-    "?text=" +
-    encodeURIComponent(message);
+    link.addEventListener("click", function (event) {
 
-  window.open(
-    whatsappLink,
-    "_blank"
-  );
-}
+      event.preventDefault();
 
+      const target = document.querySelector(
+        this.getAttribute("href")
+      );
 
-/* Smooth scrolling */
+      if (target) {
 
-document
-  .querySelectorAll('a[href^="#"]')
-  .forEach(function(link) {
-
-    link.addEventListener(
-      "click",
-      function(event) {
-
-        const target =
-          document.querySelector(
-            this.getAttribute("href")
-          );
-
-        if (target) {
-
-          event.preventDefault();
-
-          target.scrollIntoView({
-            behavior: "smooth"
-          });
-
-        }
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
 
       }
-    );
+
+    });
 
   });
+
+});

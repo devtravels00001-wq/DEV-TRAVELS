@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (target) {
 
         target.scrollIntoView({
-          behavior: "smooth"
+          behavior: "smooth",
+          block: "start"
         });
 
       }
@@ -25,3 +26,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+
+function sendWhatsApp(service) {
+
+  const phoneNumber = "919813130135";
+
+  const message =
+    "Hi Dev Travels, I am interested in " +
+    service +
+    ".";
+
+  const whatsappURL =
+    "https://wa.me/" +
+    phoneNumber +
+    "?text=" +
+    encodeURIComponent(message);
+
+  window.open(
+    whatsappURL,
+    "_blank",
+    "noopener"
+  );
+
+}

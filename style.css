@@ -932,3 +932,18 @@ footer p {
   }
 
 }
+
+/* Public reviewer email */
+.review-email {
+  display: inline-block;
+  margin-top: 8px;
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.review-email:hover {
+  text-decoration: underline;
+}

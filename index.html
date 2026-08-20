@@ -535,192 +535,6 @@
 
 
 
-<!-- REVIEWS -->
-
-<section
-  class="reviews"
-  id="reviews"
->
-
-  <div class="section-title">
-
-    <p>
-      WHAT CUSTOMERS SAY
-    </p>
-
-    <h2>
-      CUSTOMER REVIEWS
-    </h2>
-
-    <div class="line"></div>
-
-  </div>
-
-
-  <!-- REVIEW SUMMARY -->
-
-  <div class="review-summary">
-
-    <div class="big-rating">
-
-      <strong id="bigAverageRating">
-        --
-      </strong>
-
-      <span>
-        / 5
-      </span>
-
-    </div>
-
-
-    <div>
-
-      <div
-        class="summary-stars"
-        id="summaryStars"
-      >
-        ☆☆☆☆☆
-      </div>
-
-      <p id="summaryReviewCount">
-        No customer reviews yet
-      </p>
-
-    </div>
-
-  </div>
-
-
-
-  <!-- REVIEW FORM -->
-
-  <div class="review-form-box">
-
-    <h3>
-      Share Your Experience
-    </h3>
-
-    <p>
-      Travelled with Dev Travels? Leave your honest review.
-    </p>
-
-
-    <form id="reviewForm">
-
-
-      <input
-        type="text"
-        id="customerName"
-        placeholder="Your Name"
-        maxlength="40"
-        required
-      >
-
-
-
-      <div class="star-select">
-
-        <span>
-          Your Rating:
-        </span>
-
-        <div
-          class="select-stars"
-          id="ratingSelector"
-        >
-
-          <button
-            type="button"
-            class="star-btn"
-            data-rating="1"
-          >
-            ☆
-          </button>
-
-          <button
-            type="button"
-            class="star-btn"
-            data-rating="2"
-          >
-            ☆
-          </button>
-
-          <button
-            type="button"
-            class="star-btn"
-            data-rating="3"
-          >
-            ☆
-          </button>
-
-          <button
-            type="button"
-            class="star-btn"
-            data-rating="4"
-          >
-            ☆
-          </button>
-
-          <button
-            type="button"
-            class="star-btn"
-            data-rating="5"
-          >
-            ☆
-          </button>
-
-        </div>
-
-      </div>
-
-
-
-      <textarea
-        id="customerReview"
-        placeholder="Write your review..."
-        maxlength="500"
-        required
-      ></textarea>
-
-
-
-      <button
-        type="submit"
-        class="submit-review"
-      >
-        SUBMIT REVIEW
-      </button>
-
-
-      <p
-        id="reviewMessage"
-        class="review-message"
-      ></p>
-
-    </form>
-
-  </div>
-
-
-
-  <!-- REVIEWS FROM FIREBASE -->
-
-  <div
-    class="review-grid"
-    id="reviewGrid"
-  >
-
-    <p class="loading-reviews">
-      Loading customer reviews...
-    </p>
-
-  </div>
-
-</section>
-
-
-
 <!-- LOCATION -->
 
 <section
@@ -894,6 +708,199 @@
 </section>
 
 
+
+<!-- REVIEWS -->
+
+<section
+  class="reviews"
+  id="reviews"
+>
+
+  <div class="section-title">
+
+    <p>
+      WHAT CUSTOMERS SAY
+    </p>
+
+    <h2>
+      CUSTOMER REVIEWS
+    </h2>
+
+    <div class="line"></div>
+
+  </div>
+
+
+  <!-- REVIEW SUMMARY -->
+
+  <div class="review-summary">
+
+    <div class="big-rating">
+
+      <strong id="bigAverageRating">
+        --
+      </strong>
+
+      <span>
+        / 5
+      </span>
+
+    </div>
+
+
+    <div>
+
+      <div
+        class="summary-stars"
+        id="summaryStars"
+      >
+        ☆☆☆☆☆
+      </div>
+
+      <p id="summaryReviewCount">
+        No customer reviews yet
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- REVIEW FORM -->
+
+  <div class="review-form-box">
+
+    <h3>
+      Share Your Experience
+    </h3>
+
+    <p>
+      Travelled with Dev Travels? Leave your honest review.
+    </p>
+
+
+    <form id="reviewForm">
+
+
+      <input
+        type="text"
+        id="customerName"
+        placeholder="Your Name"
+        maxlength="40"
+        required
+      >
+
+
+      <input
+        type="email"
+        id="customerEmail"
+        placeholder="Your Email Address"
+        maxlength="100"
+        required
+      >
+
+
+
+      <div class="star-select">
+
+        <span>
+          Your Rating:
+        </span>
+
+        <div
+          class="select-stars"
+          id="ratingSelector"
+        >
+
+          <button
+            type="button"
+            class="star-btn"
+            data-rating="1"
+          >
+            ☆
+          </button>
+
+          <button
+            type="button"
+            class="star-btn"
+            data-rating="2"
+          >
+            ☆
+          </button>
+
+          <button
+            type="button"
+            class="star-btn"
+            data-rating="3"
+          >
+            ☆
+          </button>
+
+          <button
+            type="button"
+            class="star-btn"
+            data-rating="4"
+          >
+            ☆
+          </button>
+
+          <button
+            type="button"
+            class="star-btn"
+            data-rating="5"
+          >
+            ☆
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <textarea
+        id="customerReview"
+        placeholder="Write your review..."
+        maxlength="500"
+        required
+      ></textarea>
+
+
+
+      <button
+        type="submit"
+        class="submit-review"
+      >
+        SUBMIT REVIEW
+      </button>
+
+
+      <p
+        id="reviewMessage"
+        class="review-message"
+      ></p>
+
+    </form>
+
+  </div>
+
+
+
+  <!-- REVIEWS FROM FIREBASE -->
+
+  <div
+    class="review-grid"
+    id="reviewGrid"
+  >
+
+    <p class="loading-reviews">
+      Loading customer reviews...
+    </p>
+
+  </div>
+
+</section>
 
 <!-- FOOTER -->
 

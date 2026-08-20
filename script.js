@@ -211,6 +211,13 @@ reviewForm.addEventListener(
         .trim();
 
 
+    const customerEmail =
+      document
+        .getElementById("customerEmail")
+        .value
+        .trim();
+
+
     const customerReview =
       document
         .getElementById("customerReview")
@@ -233,11 +240,12 @@ reviewForm.addEventListener(
 
     if (
       customerName.length < 2 ||
+      !customerEmail ||
       customerReview.length < 3
     ) {
 
       reviewMessage.textContent =
-        "Please enter your name and review.";
+        "Please enter your name, email and review.";
 
       reviewMessage.style.color =
         "#ff6b6b";
@@ -277,6 +285,9 @@ reviewForm.addEventListener(
 
           name:
             customerName,
+
+          email:
+            customerEmail,
 
           rating:
             selectedRating,
@@ -493,6 +504,12 @@ function displayReviews(reviews) {
         );
 
 
+      const email =
+        escapeHTML(
+          review.email || ""
+        );
+
+
       article.innerHTML =
         `
 
@@ -511,6 +528,13 @@ function displayReviews(reviews) {
         <h4>
           ${name}
         </h4>
+
+
+        ${
+          email
+            ? `<a class="review-email" href="mailto:${email}">${email}</a>`
+            : ""
+        }
 
         `;
 
